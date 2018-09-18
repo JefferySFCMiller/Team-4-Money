@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Vets in Tech day 8</title>
+</head>
+<body>
+  <div class="container">
+    <div class="well text-center">
+      <h1>Welcome to Vets in tech day 8</h1>
+      <a href="https://goo.gl/forms/fEBawhY6wqtI1NwI3" 
+        target="_blank"
+        class="btn btn-lg btn-primary">
+        Attendance sign in
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Review 
+            </h3>
+          </div>
+          <div class="panel-body">
+            We will first go over our review of last week.  
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <b>
+                Conditional Statements
+              </b>
+            </li>
+            <li class="list-group-item">
+              <b>
+                If Else Statements
+              </b>
+            </li>
+            <li class="list-group-item">
+              <b>
+                Loops
+              </b>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              What's in store for today
+            </h3>
+          </div>
+          <div class="panel-body">
+            Javascript Event Listeners
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <b>
+                Event Listeners
+              </b>
+            </li>
+            <li class="list-group-item">
+              <b>
+                DOM Manipulation
+              </b>
+            </li>
+            <li class="list-group-item">
+              <b>
+                Working on Project
+              </b>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Things you need to know
+            </h3>
+          </div>
+          <div class="panel-body">
+            We will do a quick review on CSS
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <b>
+                What is the ID attribute?
+              </b>
+            </li>
+            <li class="list-group-item">
+              <b>
+                When do we use classes?
+              </b>
+            </li>
+            <li class="list-group-item">
+              <b>
+                How do we call on them directly?
+              </b>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">
+              Working towards building a webpage
+            </h2>
+          </div>
+          <div class="panel-body">
+            We will be working together in groups of 4 to build a webpage that will
+            use HTML, CSS, and Javascript to work with user interactions. I have added
+            the requirements below to get started. 
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <b>Create a github repo (you can one one individually or one as a group).</b>
+            </li>
+            <li class="list-group-item">
+             <b>Your webpage needs to have at least 4 pages.</b>
+            </li>
+            <li class="list-group-item">
+             <b>One page must be a contact form (does not need to submit yet).</b>
+            </li>
+            <li class="list-group-item">
+            <b>You must include multiple sections on each page.</b>
+            </li>
+            <li class="list-group-item">
+             <b>Bonus*** if you can integrate with a 3rd party API</b>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="page-header">
+          Examples
+        </h1>
+      <ul class="list-group">
+        <li class="list-group-item">
+            <button 
+            onclick="testOnClick()"
+            class="btn btn-primary btn-lg">
+            On Click
+          </button>
+          <i>Shows an alert on click</i>
+        </li>
+        <li class="list-group-item">
+          <button 
+            onclick="testingConditional()"
+            class="btn btn-primary btn-lg">
+            Test Conditionals
+          </button>
+          <i>Shows a confirm modal and changes based on user input</i>
+        </li>
+        <li class="list-group-item">
+          <button 
+            onclick="fizzBuzz()"
+            class="btn btn-primary btn-lg">
+            Open console after clicking
+          </button>
+          <i>Runs fizzbuzz in the console</i>
+        </li>
+        <li class="list-group-item">
+          <div class="form-group">
+            <label class="control-label">User Input</label>
+            <input 
+              id="testInput"
+              onkeyup="testOnChange()"
+              type="text" 
+              class="form-control">
+              <h3 id="setValue"></h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
