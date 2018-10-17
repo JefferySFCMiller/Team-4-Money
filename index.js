@@ -1,31 +1,18 @@
-function testOnClick() {
-    alert("I am testing the on click");
-  }
-  
-  function testingConditional() {
-    if(confirm("Do you want to proceed")) {
-      alert("you have shown me your skills and want to proceed");
-    } else {
-      alert("Don't be that person, keep going");
-    }
-  }
-  
-  function fizzBuzz() {
-    for (var i = 1; i <= 100; i++) {
-      if ( i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz");
-      } else if ( i % 5 === 0 ) {
-        console.log("Buzz");
-      } else if ( i % 3 === 0) {
-        console.log("Fizz")
-      } else {
-        console.log(i);
-      }
-    }
-    console.warn("I am finished with FizzBuzz, run me again");
-  }
-  
-  function testOnChange() {
-    var value = document.getElementById('testInput').value;
-    document.getElementById('setValue').innerText = value;
-  }
+const getApi = () => {
+  console.log("This is the House Votes box")
+  let list = document.querySelector("#house-list")
+  axios.get("https://api.propublica.org/congress/v1/house/votes/recent.json", {headers:{"X-API-Key":"NJZb9o6fZp3LX9t74YBKcw1EBIv7VSRPs6zmioHa"}}).then(data=>{
+    let houseData = data.data.results.votes
+    houseData.forEach(vote=>{
+    let item = document.createElement("li")
+    item.innerHTML = vote.chamber
+    list.appendChild(item)
+})
+
+
+
+    console.log(data.data.results.votes)
+  })
+}
+
+document.addEventListener("DOMContentLoaded", getApi)
